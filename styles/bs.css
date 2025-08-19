@@ -502,6 +502,24 @@ html p {
   font-size: 15px !important;
 }
 
+/* Nuclear option - maximum specificity to kill the underline */
+footer#colophon.site-footer.default-max-width .site-info a#site-name.site-name,
+footer#colophon.site-footer.default-max-width .site-info a#site-name.site-name:link,
+footer#colophon.site-footer.default-max-width .site-info a#site-name.site-name:visited,
+footer#colophon.site-footer.default-max-width .site-info a#site-name.site-name:hover,
+footer#colophon.site-footer.default-max-width .site-info a#site-name.site-name:active,
+footer#colophon.site-footer.default-max-width .site-info a#site-name.site-name:focus {
+  text-decoration: none !important;
+  text-decoration-line: none !important;
+  text-decoration-style: none !important;
+  text-decoration-thickness: none !important;
+  text-decoration-color: transparent !important;
+  border-bottom: none !important;
+  border-bottom-style: none !important;
+  border-bottom-width: 0 !important;
+  border-bottom-color: transparent !important;
+}
+
 #site-name {
   text-decoration: none !important;
   text-decoration-line: none !important;

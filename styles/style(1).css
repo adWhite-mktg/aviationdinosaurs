@@ -98,11 +98,30 @@ Modified and used as a block pattern image.
 .footer-menu {
 	text-align: center;
 }
-// Remove and replace Genesis footer credits
-remove_action( 'genesis_footer', 'genesis_do_footer' );
-add_action( 'genesis_footer', 'custom_footer_credit' );
-function custom_footer_credit() {
-    echo '© 2025 Your Site Name. All rights reserved.';
+
+/* NUCLEAR OPTION - Kill the underline on the site-name link */
+/* This must be at the end to override all other styles */
+footer#colophon.site-footer.default-max-width .site-info a#site-name.site-name,
+footer#colophon.site-footer.default-max-width .site-info a#site-name.site-name:link,
+footer#colophon.site-footer.default-max-width .site-info a#site-name.site-name:visited,
+footer#colophon.site-footer.default-max-width .site-info a#site-name.site-name:hover,
+footer#colophon.site-footer.default-max-width .site-info a#site-name.site-name:active,
+footer#colophon.site-footer.default-max-width .site-info a#site-name.site-name:focus,
+#site-name,
+#site-name:link,
+#site-name:visited,
+#site-name:hover,
+#site-name:active,
+#site-name:focus {
+  text-decoration: none !important;
+  text-decoration-line: none !important;
+  text-decoration-style: none !important;
+  text-decoration-thickness: none !important;
+  text-decoration-color: transparent !important;
+  border-bottom: none !important;
+  border-bottom-style: none !important;
+  border-bottom-width: 0 !important;
+  border-bottom-color: transparent !important;
 }
 
 
