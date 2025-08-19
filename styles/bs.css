@@ -504,4 +504,20 @@ html p {
 
 #site-name {
   text-decoration: none !important;
+  text-decoration-line: none !important;
+  text-decoration-style: none !important;
+  text-decoration-thickness: none !important;
+  text-decoration-color: transparent !important;
+}
+
+#site-name:link,
+#site-name:visited,
+#site-name:hover,
+#site-name:active,
+#site-name:focus {
+  text-decoration: none !important;
+  text-decoration-line: none !important;
+  text-decoration-style: none !important;
+  text-decoration-thickness: none !important;
+  text-decoration-color: transparent !important;
 }
