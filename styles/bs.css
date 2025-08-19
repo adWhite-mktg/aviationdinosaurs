@@ -490,7 +490,7 @@ img:is([sizes="auto" i], [sizes^="auto," i]) {
 
 .site-info .site-name {
   font-family: "Fira Sans", sans-serif;
-  text-decoration: none;
+  text-decoration: none !important;
 }
 
 html * {
