@@ -104,3 +104,8 @@ add_action( 'genesis_footer', 'custom_footer_credit' );
 function custom_footer_credit() {
     echo '© 2025 Your Site Name. All rights reserved.';
 }
+
+
+.awcTextCenter {
+	text-align: center !important;
+}
